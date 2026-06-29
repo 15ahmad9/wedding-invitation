@@ -88,7 +88,7 @@ if (phoneLink && callBtn && whatsappBtn) {
   phoneLink.textContent = displayContactNumber;
   phoneLink.href = `tel:+${contactNumber}`;
   callBtn.href = `tel:+${contactNumber}`;
-  whatsappBtn.href = `https://wa.me/${contactNumber}?text=${encodeURIComponent("مرحباً، لدي استفسار بخصوص دعوة فرح أحمد وكريمته.")}`;
+  whatsappBtn.href = `https://wa.me/${contactNumber}?text=${encodeURIComponent("مرحباً، لدي استفسار بخصوص دعوة فرح يوسف وهند.")}`;
 }
 
 function updateCountdown() {

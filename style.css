@@ -1,12 +1,13 @@
 :root {
-  --bg: #fff9f2;
+  --bg: #fff8f1;
   --cream: #fffdf8;
+  --maroon: #631b25;
   --gold: #c69b5c;
   --gold-dark: #9d7440;
-  --text: #3f3327;
-  --muted: #7f6b5a;
-  --rose: #f8e7df;
-  --shadow: 0 25px 70px rgba(92, 60, 31, 0.15);
+  --text: #631b25;
+  --muted: #7a5b50;
+  --rose: #f5e6d8;
+  --shadow: 0 25px 70px rgba(99, 27, 37, 0.14);
 }
 
 * {
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Aref Ruqaa", serif;
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
@@ -396,7 +397,7 @@ a {
 }
 
 .outline-btn:hover {
-  background: var(--gold);
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
   color: #fff;
   transform: translateY(-3px);
 }
@@ -421,7 +422,7 @@ a {
     rgba(255, 253, 248, 0.92);
   border: 1px solid rgba(198, 155, 92, 0.48);
   box-shadow: 0 28px 80px rgba(92, 60, 31, 0.12);
-  color: #573043;
+  color: var(--maroon);
   overflow: hidden;
 }
 
@@ -446,19 +447,19 @@ a {
   margin: 0 auto 22px;
   font-size: clamp(1.25rem, 3.4vw, 2rem);
   line-height: 2.05;
-  color: #6a344d;
+  color: var(--maroon);
 }
 
 .floral-mark {
   margin: 6px auto 24px;
-  color: #d6a35d;
+  color: var(--gold);
   font-size: 2rem;
   line-height: 1;
 }
 
 .honor-title {
   margin-bottom: 18px;
-  color: #a96c86;
+  color: var(--gold-dark);
   font-size: clamp(1.35rem, 3vw, 2rem);
   font-weight: 700;
 }
@@ -474,14 +475,14 @@ a {
 
 .family-name span {
   display: block;
-  color: #8c6676;
+  color: var(--muted);
   font-size: 0.94rem;
   margin-bottom: 8px;
 }
 
 .family-name strong {
   display: block;
-  color: #5d2f45;
+  color: var(--maroon);
   font-size: 1.05rem;
   font-weight: 900;
 }
@@ -494,28 +495,28 @@ a {
 
 .formal-text {
   margin: 12px auto 10px;
-  color: #4d3440;
+  color: var(--maroon);
   font-size: clamp(1.2rem, 3vw, 1.75rem);
   line-height: 1.9;
 }
 
 .couple-formal-name {
   margin: 10px 0 14px;
-  color: #623149;
+  color: var(--maroon);
   font-size: clamp(3.5rem, 11vw, 6.8rem);
   line-height: 1.15;
   font-weight: 700;
 }
 
 .couple-formal-name span {
-  color: #a96c86;
+  color: var(--gold-dark);
   font-size: 0.55em;
 }
 
 .formal-subtext {
   max-width: 480px;
   margin: 0 auto 24px;
-  color: #5f4a53;
+  color: var(--muted);
   font-size: clamp(1.05rem, 2.6vw, 1.55rem);
   line-height: 1.9;
 }
@@ -544,7 +545,7 @@ a {
 .formal-details {
   display: grid;
   gap: 8px;
-  color: #6a344d;
+  color: var(--maroon);
 }
 
 .formal-details strong {
@@ -553,13 +554,13 @@ a {
 }
 
 .formal-details span {
-  color: #b8798e;
+  color: var(--gold-dark);
   font-size: 1.05rem;
   letter-spacing: 1.5px;
 }
 
 .formal-details small {
-  color: #4d3440;
+  color: var(--maroon);
   font-size: 0.98rem;
   font-weight: 800;
 }
