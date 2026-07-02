@@ -14,45 +14,46 @@
 
   <audio id="weddingMusic" src="assets/audio/wedding-music.mp3" loop preload="auto"></audio>
 
-  <section class="invitation-cover" id="invitationCover" role="button" tabindex="0" aria-label="اضغط لفتح الدعوة">
+  <section class="invitation-cover" id="invitationCover" role="button" tabindex="0" aria-label="اضغط لفتح الدعوة" data-i18n-aria="coverAria">
     <div class="cover-card">
-      <p class="cover-kicker">دعوة زفاف</p>
+      <p class="cover-kicker" data-i18n="coverKicker">دعوة زفاف</p>
       <div class="cover-ornament">✦</div>
-      <h1>يوسف <span>و</span> هند</h1>
-      <p class="cover-date">الثلاثاء 1 / 12 / 2026</p>
-      <p class="cover-time">الساعة 5:00 مساءً</p>
-      <p class="cover-place">فندق InterContinental</p>
-      <button class="open-invitation-btn" id="openInvitationBtn" type="button">اضغط لفتح الدعوة</button>
-      <small>نتشرف بحضوركم ومشاركتكم فرحتنا</small>
+      <h1 data-i18n-html="coupleNameHtml">يوسف <span>و</span> هند</h1>
+      <p class="cover-date" data-i18n="coverDate">الثلاثاء 1 / 12 / 2026</p>
+      <p class="cover-time" data-i18n="coverTime">الساعة 5:00 مساءً</p>
+      <p class="cover-place" data-i18n="place">فندق InterContinental</p>
+      <button class="open-invitation-btn" id="openInvitationBtn" type="button" data-i18n="openInvite">اضغط لفتح الدعوة</button>
+      <small data-i18n="coverSmall">نتشرف بحضوركم ومشاركتكم فرحتنا</small>
     </div>
   </section>
 
   <header class="hero" id="home">
     <nav class="navbar">
-      <a class="logo" href="#home">دعوة فرح</a>
+      <a class="logo" href="#home" data-i18n="logo">دعوة فرح</a>
       <div class="nav-actions">
-        <button class="music-toggle" id="musicToggle" type="button" aria-label="تشغيل أو إيقاف الموسيقى">♫ تشغيل الموسيقى</button>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة">☰</button>
+        <button class="lang-toggle" id="languageToggle" type="button" aria-label="Change language">EN</button>
+        <button class="music-toggle" id="musicToggle" type="button" aria-label="تشغيل أو إيقاف الموسيقى" data-i18n-aria="musicAria">♫ تشغيل الموسيقى</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" data-i18n-aria="menuAria">☰</button>
       </div>
       <div class="nav-links" id="navLinks">
-        <a href="#details">التفاصيل</a>
-        <a href="#countdown">العد التنازلي</a>
-        <a href="#location">الموقع</a>
-        <a href="#rsvp">تأكيد الحضور</a>
-        <a href="#contact">التواصل والاستفسار</a>
+        <a href="#details" data-i18n="navDetails">التفاصيل</a>
+        <a href="#countdown" data-i18n="navCountdown">العد التنازلي</a>
+        <a href="#location" data-i18n="navLocation">الموقع</a>
+        <a href="#rsvp" data-i18n="navRsvp">تأكيد الحضور</a>
+        <a href="#contact" data-i18n="navContact">التواصل والاستفسار</a>
       </div>
     </nav>
 
     <div class="hero-content reveal">
-      <p class="subtitle">بكل الحب والسرور</p>
-      <h1>يوسف <span>و</span> هند</h1>
-      <p class="invitation-text">
+      <p class="subtitle" data-i18n="heroSubtitle">بكل الحب والسرور</p>
+      <h1 data-i18n-html="coupleNameHtml">يوسف <span>و</span> هند</h1>
+      <p class="invitation-text" data-i18n="heroText">
         يتشرفان بدعوتكم لمشاركتهما فرحة العمر وحضور حفل الزفاف
       </p>
-      <div class="date-badge">الثلاثاء 1 / 12 / 2026 — الساعة 5:00 مساءً</div>
+      <div class="date-badge" data-i18n="dateBadge">الثلاثاء 1 / 12 / 2026 — الساعة 5:00 مساءً</div>
       <div class="hero-actions">
-        <a href="#details" class="main-btn">تفاصيل الدعوة</a>
-        <a href="#contact" class="outline-btn">التواصل والاستفسار</a>
+        <a href="#details" class="main-btn" data-i18n="detailsBtn">تفاصيل الدعوة</a>
+        <a href="#contact" class="outline-btn" data-i18n="contactBtn">التواصل والاستفسار</a>
       </div>
     </div>
   </header>
@@ -60,35 +61,35 @@
   <main>
     <section class="section intro reveal" id="invitation-card">
       <div class="formal-invitation-card">
-        <p class="quran-verse">
+        <p class="quran-verse" data-i18n="verse">
           ومن آياته أن خلق لكم من أنفسكم أزواجاً لتسكنوا إليها وجعل بينكم مودة ورحمة
         </p>
 
         <div class="floral-mark" aria-hidden="true">✤</div>
 
-        <p class="honor-title">يتشرف</p>
+        <p class="honor-title" data-i18n="honorTitle">يتشرف</p>
 
         <div class="family-row">
           <div class="family-name">
-            <span>عائلة العريس</span>
-            <strong>يوسف</strong>
+            <span data-i18n="groomFamily">عائلة العريس</span>
+            <strong data-i18n="groomName">يوسف</strong>
           </div>
 
           <div class="divider-line"></div>
 
           <div class="family-name">
-            <span>عائلة العروس</span>
-            <strong>هند</strong>
+            <span data-i18n="brideFamily">عائلة العروس</span>
+            <strong data-i18n="brideName">هند</strong>
           </div>
         </div>
 
-        <p class="formal-text">
+        <p class="formal-text" data-i18n="formalText">
           بكل الحب والسرور، ندعوكم لمشاركتنا الاحتفال بزفاف
         </p>
 
-        <h2 class="couple-formal-name">يوسف <span>و</span> هند</h2>
+        <h2 class="couple-formal-name" data-i18n-html="coupleNameHtml">يوسف <span>و</span> هند</h2>
 
-        <p class="formal-subtext">
+        <p class="formal-subtext" data-i18n="formalSubtext">
           يسرّنا أن تشاركونا فرحتنا وأن تكونوا جزءاً من أجمل أيام حياتنا
         </p>
 
@@ -99,80 +100,80 @@
         </div>
 
         <div class="formal-details">
-          <strong>الثلاثاء، 1-12-2026</strong>
-          <span>فندق InterContinental</span>
-          <small>الساعة 5:00 مساءً</small>
+          <strong data-i18n="formalDate">الثلاثاء، 1-12-2026</strong>
+          <span data-i18n="place">فندق InterContinental</span>
+          <small data-i18n="formalTime">الساعة 5:00 مساءً</small>
         </div>
       </div>
     </section>
 
     <section class="section details" id="details">
       <div class="section-title reveal">
-        <span>Wedding Details</span>
-        <h2>تفاصيل الحفل</h2>
+        <span data-i18n="detailsLabel">Wedding Details</span>
+        <h2 data-i18n="detailsTitle">تفاصيل الحفل</h2>
       </div>
 
       <div class="cards">
         <div class="card reveal">
           <div class="icon">📅</div>
-          <h3>التاريخ</h3>
-          <p>الثلاثاء، 1 ديسمبر 2026</p>
+          <h3 data-i18n="dateTitle">التاريخ</h3>
+          <p data-i18n="dateValue">الثلاثاء، 1 ديسمبر 2026</p>
         </div>
 
         <div class="card reveal">
           <div class="icon">⏰</div>
-          <h3>الوقت</h3>
-          <p>الساعة 5:00 مساءً</p>
+          <h3 data-i18n="timeTitle">الوقت</h3>
+          <p data-i18n="timeValue">الساعة 5:00 مساءً</p>
         </div>
 
         <div class="card reveal">
           <div class="icon">🕊️</div>
-          <h3>المناسبة</h3>
-          <p>حفل زفاف يوسف وهند</p>
+          <h3 data-i18n="occasionTitle">المناسبة</h3>
+          <p data-i18n="occasionValue">حفل زفاف يوسف وهند</p>
         </div>
 
         <div class="card reveal">
           <div class="icon">📍</div>
-          <h3>المكان</h3>
-          <p>فندق InterContinental</p>
+          <h3 data-i18n="placeTitle">المكان</h3>
+          <p data-i18n="place">فندق InterContinental</p>
         </div>
       </div>
     </section>
 
     <section class="section countdown-section" id="countdown">
       <div class="section-title reveal">
-        <span>Save The Date</span>
-        <h2>نعدّ الأيام ليومنا</h2>
+        <span data-i18n="saveDate">Save The Date</span>
+        <h2 data-i18n="countdownTitle">نعدّ الأيام ليومنا</h2>
       </div>
 
       <div class="countdown reveal" aria-label="Countdown to wedding date">
         <div class="time-box">
           <strong id="days">00</strong>
-          <span>يوم</span>
+          <span data-i18n="daysLabel">يوم</span>
         </div>
         <div class="time-box">
           <strong id="hours">00</strong>
-          <span>ساعة</span>
+          <span data-i18n="hoursLabel">ساعة</span>
         </div>
         <div class="time-box">
           <strong id="minutes">00</strong>
-          <span>دقيقة</span>
+          <span data-i18n="minutesLabel">دقيقة</span>
         </div>
         <div class="time-box">
           <strong id="seconds">00</strong>
-          <span>ثانية</span>
+          <span data-i18n="secondsLabel">ثانية</span>
         </div>
       </div>
     </section>
 
     <section class="section location" id="location">
       <div class="location-card reveal">
-        <span>Location</span>
-        <h2>فندق InterContinental</h2>
-        <p>
+        <span data-i18n="locationLabel">Location</span>
+        <h2 data-i18n="place">فندق InterContinental</h2>
+        <p data-i18n="locationText">
           يمكنكم فتح الموقع مباشرة عبر خرائط Google للوصول بسهولة إلى مكان الحفل.
         </p>
-        <a class="outline-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=InterContinental%20Hotel%20Amman">
+        <a class="outline-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=InterContinental%20Hotel%20Amman" data-i18n="mapBtn">
           فتح الموقع على الخريطة
         </a>
       </div>
@@ -180,54 +181,54 @@
 
     <section class="section rsvp" id="rsvp">
       <div class="section-title reveal">
-        <span>RSVP</span>
-        <h2>تأكيد الحضور</h2>
+        <span data-i18n="rsvpLabel">RSVP</span>
+        <h2 data-i18n="rsvpTitle">تأكيد الحضور</h2>
       </div>
 
       <form class="rsvp-form reveal" id="rsvpForm">
-        <input type="text" id="guestName" placeholder="الاسم الكريم" required>
-        <input type="number" id="guestCount" placeholder="عدد الحضور" min="1" required>
-        <textarea id="guestMessage" placeholder="رسالة اختيارية"></textarea>
-        <button type="submit">إرسال تأكيد الحضور عبر WhatsApp</button>
+        <input type="text" id="guestName" placeholder="الاسم الكريم" data-i18n-placeholder="guestNamePlaceholder" required>
+        <input type="number" id="guestCount" placeholder="عدد الحضور" data-i18n-placeholder="guestCountPlaceholder" min="1" required>
+        <textarea id="guestMessage" placeholder="رسالة اختيارية" data-i18n-placeholder="guestMessagePlaceholder"></textarea>
+        <button type="submit" data-i18n="rsvpSubmit">إرسال تأكيد الحضور عبر WhatsApp</button>
       </form>
     </section>
 
     <section class="section contact" id="contact">
       <div class="section-title reveal">
-        <span>Contact & Inquiry</span>
-        <h2>التواصل والاستفسار</h2>
+        <span data-i18n="contactLabel">Contact & Inquiry</span>
+        <h2 data-i18n="contactTitle">التواصل والاستفسار</h2>
       </div>
 
       <div class="contact-card reveal">
-        <p>
+        <p data-i18n="contactText">
           لأي استفسار بخصوص الدعوة، موعد الحفل، أو موقع فندق InterContinental، يمكنكم التواصل مباشرة عبر الاتصال أو WhatsApp.
         </p>
 
         <div class="contact-boxes">
           <div class="contact-box">
             <div class="contact-icon">☎</div>
-            <small>رقم الاستفسار والتواصل</small>
+            <small data-i18n="phoneSmall">رقم الاستفسار والتواصل</small>
             <a id="phoneLink" href="tel:+962790000000">+962 79 000 0000</a>
           </div>
 
           <div class="contact-box">
             <div class="contact-icon">💬</div>
             <small>WhatsApp</small>
-            <strong>نرحب باستفساراتكم</strong>
+            <strong data-i18n="whatsappWelcome">نرحب باستفساراتكم</strong>
           </div>
         </div>
 
         <div class="contact-actions">
-          <a class="main-btn" id="callBtn" href="tel:+962790000000">اتصال مباشر</a>
-          <a class="outline-btn" id="whatsappBtn" target="_blank" rel="noopener" href="https://wa.me/962790000000">إرسال WhatsApp</a>
+          <a class="main-btn" id="callBtn" href="tel:+962790000000" data-i18n="callBtn">اتصال مباشر</a>
+          <a class="outline-btn" id="whatsappBtn" target="_blank" rel="noopener" href="https://wa.me/962790000000" data-i18n="whatsappBtn">إرسال WhatsApp</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>نتشرف بحضوركم ومشاركتكم فرحتنا</p>
-    <span>يوسف وهند — 1 / 12 / 2026 — الساعة 5:00 مساءً</span>
+    <p data-i18n="footerText">نتشرف بحضوركم ومشاركتكم فرحتنا</p>
+    <span data-i18n="footerDetails">يوسف وهند — 1 / 12 / 2026 — الساعة 5:00 مساءً</span>
   </footer>
 
   <script src="script.js"></script>
